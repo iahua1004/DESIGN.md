@@ -36,9 +36,9 @@
 
 ```bash
 # 1. 克隆本仓库
-git clone https://github.com/<你的用户名>/design-md.git /tmp/design-md-install
+git clone https://github.com/iahua1004/DESIGN.md.git /tmp/design-md-install
 # 国内网络可以用 Gitee：
-# git clone https://gitee.com/<你的用户名>/design-md.git /tmp/design-md-install
+# git clone https://gitee.com/iahua1004/DESIGN.md.git /tmp/design-md-install
 
 # 2. 复制到技能目录（目录名必须是 design-md，要和 SKILL.md 里的 name 字段一致）
 mkdir -p ~/.workbuddy/skills
@@ -164,9 +164,9 @@ design-md/
 
 ```json
 { "name": "gitee",         "enabled": true,
-  "url": "https://gitee.com/<你的用户名>/design-md/raw/main/design-md/{dir}/DESIGN.md" },
+  "url": "https://gitee.com/iahua1004/DESIGN.md/raw/main/design-md/{dir}/DESIGN.md" },
 { "name": "github-mirror", "enabled": true,
-  "url": "https://raw.githubusercontent.com/<你的用户名>/design-md/main/design-md/{dir}/DESIGN.md" }
+  "url": "https://raw.githubusercontent.com/iahua1004/DESIGN.md/main/design-md/{dir}/DESIGN.md" }
 ```
 
 脚本会按顺序尝试：**Gitee → GitHub 镜像 → 上游官方 raw → jsDelivr**，全失败才报错（退出码 3），
