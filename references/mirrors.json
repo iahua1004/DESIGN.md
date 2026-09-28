@@ -1,0 +1,26 @@
+{
+  "_comment": "Fetch sources, tried in this order until one returns a valid DESIGN.md. {dir} is replaced by the upstream directory name (e.g. linear.app, mistral.ai, nintendo-2001). Fill in OWNER/REPO for the gitee and github-mirror entries and set \"enabled\": true to prefer them over the official source.",
+  "_upstream": "https://github.com/VoltAgent/awesome-design-md (MIT)",
+  "sources": [
+    {
+      "name": "gitee",
+      "enabled": false,
+      "url": "https://gitee.com/OWNER/REPO/raw/main/design-md/{dir}/DESIGN.md"
+    },
+    {
+      "name": "github-mirror",
+      "enabled": false,
+      "url": "https://raw.githubusercontent.com/OWNER/REPO/main/design-md/{dir}/DESIGN.md"
+    },
+    {
+      "name": "official-raw",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/VoltAgent/awesome-design-md/main/design-md/{dir}/DESIGN.md"
+    },
+    {
+      "name": "jsdelivr",
+      "enabled": true,
+      "url": "https://cdn.jsdelivr.net/gh/VoltAgent/awesome-design-md@main/design-md/{dir}/DESIGN.md"
+    }
+  ]
+}

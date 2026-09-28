@@ -1,0 +1,7 @@
+interface:
+  display_name: "DESIGN.md 设计系统"
+  short_description: "用 74 个品牌设计语言生成视觉一致的 UI"
+  brand_color: "#5E6AD2"
+  default_prompt: "Use $design-md to build the page: find the brand that matches my request with `search`, pull its tokens with `--css-vars`, read its `overview,dos` sections, then write a single-file HTML that only uses those tokens. Verify every hex against the token list and check contrast before delivering. If I ask for a design system from a website instead, use `probe-site` and write a DESIGN.md."
+policy:
+  allow_implicit_invocation: true
