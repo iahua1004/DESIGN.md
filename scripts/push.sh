@@ -17,7 +17,7 @@ REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$REPO_ROOT"
 
 GITHUB_SSH="${GITHUB_SSH:-git@github.com:iahua1004/DESIGN.md.git}"
-GITEE_SSH="${GITEE_SSH:-git@gitee.com:iahua1004/DESIGN.md.git}"
+GITEE_SSH="${GITEE_SSH:-git@gitee.com:Muzi1004/design.md.git}"
 
 push_one() {
   local name="$1" url="$2"
@@ -37,7 +37,7 @@ if [[ -n "${GITHUB_TOKEN:-}" || -n "${GITEE_TOKEN:-}" ]]; then
     push_one github "https://iahua1004:${GITHUB_TOKEN}@github.com/iahua1004/DESIGN.md.git"
   fi
   if [[ -n "${GITEE_TOKEN:-}" ]]; then
-    push_one gitee "https://iahua1004:${GITEE_TOKEN}@gitee.com/iahua1004/DESIGN.md.git"
+    push_one gitee "https://Muzi1004:${GITEE_TOKEN}@gitee.com/Muzi1004/design.md.git"
   fi
 else
   push_one github "$GITHUB_SSH"

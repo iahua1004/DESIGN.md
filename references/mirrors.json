@@ -1,11 +1,11 @@
 {
-  "_comment": "Fetch sources, tried in this order until one returns a valid DESIGN.md. {dir} is replaced by the upstream directory name (e.g. linear.app, mistral.ai, nintendo-2001). Mirror repositories for this fork: github.com/iahua1004/DESIGN.md and (once created) gitee.com/iahua1004/DESIGN.md",
+  "_comment": "Fetch sources, tried in this order until one returns a valid DESIGN.md. {dir} is replaced by the upstream directory name (e.g. linear.app, mistral.ai, nintendo-2001). Mirror repositories for this fork: github.com/iahua1004/DESIGN.md and gitee.com/Muzi1004/design.md",
   "_upstream": "https://github.com/VoltAgent/awesome-design-md (MIT)",
   "sources": [
     {
       "name": "gitee",
-      "enabled": false,
-      "url": "https://gitee.com/iahua1004/DESIGN.md/raw/main/design-md/{dir}/DESIGN.md"
+      "enabled": true,
+      "url": "https://gitee.com/Muzi1004/design.md/raw/main/design-md/{dir}/DESIGN.md"
     },
     {
       "name": "github-mirror",
